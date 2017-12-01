@@ -1,0 +1,34 @@
+.container-center{
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.container-middle{
+    padding: 0;
+    vertical-align: middle;
+    display: table-cell;
+    margin: 0;
+}
+.title{
+    margin-top: 0;
+    color: #e77818;
+    font-size: 2.5em;
+    font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.privacy {
+    color: #e77818;
+    right: 0;
+}
+a{
+    color:#e77818;
+}
+footer{
+    font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    position: absolute;
+    bottom: 0;
+}
+.name {
+    color: #e77818;;
+    left:0;
+}

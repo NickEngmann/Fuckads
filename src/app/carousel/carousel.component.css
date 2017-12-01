@@ -1,0 +1,99 @@
+ .container {
+    margin: 0 auto;
+    margin-top: 10%;
+    width: 200px;
+    height: 150px;
+    position: relative;
+    perspective: 1000px;
+    vertical-align: middle;
+  }
+  
+  .carousel {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    transform-style: preserve-3d;
+    transition: transform 1s;
+  }
+  
+  .item {
+    display: block;
+    position: absolute;
+    background: #000;
+    width: 200px;
+    height: 150px;
+    line-height: 200px;
+    font-size: 4em;
+    text-align: center;
+    color: #FFF;
+    opacity: 0.95;
+    border-radius: 10px;
+  }
+  
+  .a {
+    transform: rotateY(0deg) translateZ(250px);
+    background-color:rgba(0, 0, 0, 0);
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/a/a4/Flag_of_the_United_States.svg/1280px-Flag_of_the_United_States.svg.png");
+    background-repeat: no-repeat;
+    background-size: 200px 150px;
+  }
+  .b {
+    transform: rotateY(60deg) translateZ(250px);
+    background-color:rgba(0, 0, 0, 0);
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/a/ae/Flag_of_the_United_Kingdom.svg/1280px-Flag_of_the_United_Kingdom.svg.png");
+    background-repeat: no-repeat;
+    background-size: 200px 150px;
+  }
+  .c {
+    transform: rotateY(120deg) translateZ(250px);
+    background-color:rgba(0, 0, 0, 0);
+    background-image: url("https://vignette.wikia.nocookie.net/marveldatabase/images/c/c1/Flag_of_Australia.png/revision/latest?cb=20160729135343");
+    background-repeat: no-repeat;
+    background-size: 200px 150px;
+  }
+  .d {
+    transform: rotateY(180deg) translateZ(250px);
+    background-color:rgba(0, 0, 0, 0);
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/b/ba/Flag_of_Germany.svg/1200px-Flag_of_Germany.svg.png");
+    background-repeat: no-repeat;
+    background-size: 200px 150px;
+  }
+  .e {
+    transform: rotateY(240deg) translateZ(250px);
+    background-color:rgba(0, 0, 0, 0);
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/c/c3/Flag_of_France.svg/1280px-Flag_of_France.svg.png");
+    background-repeat: no-repeat;
+    background-size: 200px 150px;
+  } 
+  .f {
+    transform: rotateY(300deg) translateZ(250px);
+    background-color:rgba(0, 0, 0, 0);
+    background-image: url("https://upload.wikimedia.org/wikipedia/en/thumb/0/05/Flag_of_Brazil.svg/1280px-Flag_of_Brazil.svg.png");
+    background-repeat: no-repeat;
+    background-size: 200px 150px;
+  }
+  
+  .next, .prev {
+    color: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    padding: 1em 2em;
+    cursor: pointer;
+    width: 1px;
+    height: 100px;
+    background-color:rgba(0, 0, 0, 0);
+    /* background-color:grey; */
+    text-align: center;
+    vertical-align: middle;
+    line-height: 85px;
+    border-radius: 5px;
+    font-size: 36px;
+    /* border-top: 1px solid #FFF;
+    box-shadow: 0 5px 0 #999; */
+    transition: box-shadow 0.1s, top 0.1s;
+  }
+  .next:hover, .prev:hover { color: #e77818; }
+  .next:active, .prev:active {
+    color:rgba(255, 255, 255, 0.5);
+  }
+  .next { right: -6em; }
+  .prev { left: -7em; }
