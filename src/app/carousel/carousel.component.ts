@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, Output, EventEmitter } from '@angular/core';
+import { CarouselService } from './carousel.service';
 declare var jquery:any;
 declare var $ :any;
 declare var currdeg:any;
@@ -10,14 +11,42 @@ declare var currdeg:any;
 })
 
 export class CarouselComponent implements OnInit {
-
+  @Output() onDatePicked: EventEmitter<any> = new EventEmitter<any>();
+  id = 0;
+  carouselArray = ["USA", "UK", "Australia", "Germany", "France", "Brazil"]
   carousel = $(".carousel");
   currdeg  = 0;
+  constructor(private carouselservice: CarouselService) {
+
+  }
+
+  ngOnInit() {
+  }
+  pickDate(date: any): void {
+    this.onDatePicked.emit(date);
+  }
+  changeLayout(){
+    this.pickDate("swag")
+  }
   next(){
     $(".next").on("click", { d: "n" }, this.rotate(1, this.currdeg));
+    if(this.id == 5){
+      this.id = 0
+    }
+    else{
+      this.id++
+    }
+    this.carouselservice.update(this.id)
   }
   prev(){
     $(".prev").on("click", { d: "p" }, this.rotate(2, this.currdeg));
+    if(this.id == 0){
+      this.id = 5;
+    }
+    else{
+      this.id--;
+    }
+    this.carouselservice.update(this.id)
   }
   rotate(num, currdeg){
     this.carousel = $(".carousel");
@@ -33,11 +62,6 @@ export class CarouselComponent implements OnInit {
       "-o-transform": "rotateY("+this.currdeg+"deg)",
       "transform": "rotateY("+this.currdeg+"deg)"
     });
-  }
-  
-  constructor() { }
-
-  ngOnInit() {
   }
 
 }
