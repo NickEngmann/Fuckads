@@ -1,0 +1,32 @@
+.container-center{
+    display: table;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+}
+.container-middle-subpage{
+    margin-top: 10em;
+    padding: 0;
+    /* display: table-cell; */
+}
+.title{
+    margin-top: 0;
+    color: #e77818;
+    font-size: 2.5em;
+    font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.explaination-subpage{
+    width:80%;
+    text-align: center;
+    margin: 0 auto;
+}
+.intro-subpage{
+    font-size: 1.1em;
+    color: #6C777D;
+    font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+.sub-header{
+    margin-top: 0;
+    color: #e77818;
+    font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}

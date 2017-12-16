@@ -6,19 +6,21 @@ import { AppComponent } from './app.component';
 import { CarouselComponent } from './carousel/carousel.component';
 import { ExplainationComponent } from './explaination/explaination.component';
 import { FormComponent } from './form/form.component';
-
+import { LandingComponent } from './landing/landing.component';
+import {CarouselService} from './carousel/carousel.service';
 
 @NgModule({
   declarations: [
     AppComponent,
     CarouselComponent,
     ExplainationComponent,
-    FormComponent
+    FormComponent,
+    LandingComponent
   ],
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [CarouselService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
