@@ -10,7 +10,7 @@ import { CarouselService } from '../carousel/carousel.service';
 export class FormComponent implements OnInit {
   name = "";
   link = "";
-  company = [];
+  companies = [];
   id = 0;
 
   formItems = {
@@ -128,7 +128,7 @@ export class FormComponent implements OnInit {
   constructor(private carouselservice: CarouselService) {
     this.id = this.carouselservice.current()
     this.name = this.formItems.item[this.id].name;
-    this.company = this.formItems.item[this.id].company;
+    this.companies = this.formItems.item[this.id].company;
   }
 
   ngOnInit() {

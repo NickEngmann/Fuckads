@@ -7,8 +7,12 @@
           order to opt out of their assigned data-collection procedures.</p>
       </div>
       <div>
-        <h2 class="sub-header">{{ name }} Data Providers:</h2>
+        <h2 class="sub-header">{{ name }}'s Data Providers:</h2>
+        <li class="companies" *ngFor="let company of companies">
+            <a class="companies" mat-button href={{company.link}} target="__blank">{{ company.name }}</a>
+        </li>
       </div>
     </div>
+    <div class="back"><a href="/" class="back">back</a></div>
   </div>
 </div>
