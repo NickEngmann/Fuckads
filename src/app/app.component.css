@@ -1,7 +1,7 @@
 .container-center{
     display: table;
     position: absolute;
-    height: 100%;
+    height: 90%;
     width: 100%;
 }
 .container-middle{
@@ -13,7 +13,7 @@
 .title{
     margin-top: 0;
     color: #e77818;
-    font-size: 2.5em;
+    font-size: 3.5em;
     font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .privacy {

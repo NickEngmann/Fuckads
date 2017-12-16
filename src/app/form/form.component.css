@@ -1,13 +1,17 @@
 .container-center{
     display: table;
     position: absolute;
-    height: 100%;
+    height: 80%;
     width: 100%;
 }
 .container-middle-subpage{
-    margin-top: 10em;
-    padding: 0;
+    /* margin-top: 10em;
+    padding: 0; */
     /* display: table-cell; */
+    vertical-align: middle;
+    display: table-cell;
+    margin: 0;
+    padding: 0;
 }
 .title{
     margin-top: 0;
@@ -16,7 +20,7 @@
     font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
 .explaination-subpage{
-    width:80%;
+    width:60%;
     text-align: center;
     margin: 0 auto;
 }
@@ -29,4 +33,108 @@
     margin-top: 0;
     color: #e77818;
     font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif;
+}
+
+@media (min-width:120px)  { 
+    a.companies{
+        color: #e77818;
+        margin: 4px;
+        /* width: 30%; */
+        font-size: 1.5em;
+        border-width: 0.5px;
+        border-radius: 10px;
+        border-style: solid;
+        font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        }
+    }
+@media (min-width:320px)  { 
+a.companies{
+    color: #e77818;
+    margin: 4px;
+    /* width: 30%; */
+    font-size: 1.5em;
+    border-width: 0.5px;
+    border-radius: 10px;
+    border-style: solid;
+    font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+}
+@media (min-width:481px)  { 
+    a.companies{
+        color: #e77818;
+        margin: 4px;
+        /* width: 30%; */
+        font-size: 1.5em;
+        border-width: 0.5px;
+        border-radius: 10px;
+        border-style: solid;
+        font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+ }
+@media (min-width:641px)  { 
+    a.companies{
+        color: #e77818;
+        margin: 4px;
+        width: 30%;
+        font-size: 1.5em;
+        border-width: 0.5px;
+        border-radius: 10px;
+        border-style: solid;
+        font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+ }
+@media (min-width:961px)  { 
+    a.companies{
+        color: #e77818;
+        margin: 4px;
+        width: 30%;
+        font-size: 1.5em;
+        border-width: 0.5px;
+        border-radius: 10px;
+        border-style: solid;
+        font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+}
+@media (min-width:1025px) { 
+    a.companies{
+        color: #e77818;
+        margin: 4px;
+        width: 30%;
+        font-size: 1.5em;
+        border-width: 0.5px;
+        border-radius: 10px;
+        border-style: solid;
+        font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+}
+@media (min-width:1281px) { 
+    a.companies{
+        color: #e77818;
+        margin: 4px;
+        width: 30%;
+        font-size: 1.5em;
+        border-width: 0.5px;
+        border-radius: 10px;
+        border-style: solid;
+        font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif;
+    }
+}
+
+li.companies{
+    list-style: none;
+}
+
+.back{
+    margin-top: 1.5em;
+}
+a.back{
+        color:black;
+        margin: 20px;
+        padding: 5px;
+        text-decoration: none;
+        font-size: 1.5em;
+        border-width: 0.5px;
+        border-radius: 10px;
+        border-style: solid;
+        font-family: National2,"Helvetica Neue",Helvetica,Arial,sans-serif;
 }
