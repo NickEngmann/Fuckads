@@ -1,5 +1,5 @@
 # Fuckads
-
+![Example](https://github.com/NickEngmann/Fuckads/blob/master/img/fuckads.gif)
 ## Details
 
 Tired of targeted ads? This is a website that can guide you through the different forms you have to fill out to disable sites like Facebook from giving you targeted advertisements. Protect your privacy!
