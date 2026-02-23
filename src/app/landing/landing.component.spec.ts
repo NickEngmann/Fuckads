@@ -1,5 +1,4 @@
 import { async, ComponentFixture, TestBed } from '@angular/core/testing';
-
 import { LandingComponent } from './landing.component';
 
 describe('LandingComponent', () => {
@@ -8,7 +7,7 @@ describe('LandingComponent', () => {
 
   beforeEach(async(() => {
     TestBed.configureTestingModule({
-      declarations: [ LandingComponent ]
+      declarations: [LandingComponent]
     })
     .compileComponents();
   }));
@@ -21,5 +20,14 @@ describe('LandingComponent', () => {
 
   it('should create', () => {
     expect(component).toBeTruthy();
+  });
+
+  it('should have correct title', () => {
+    expect(component.title).toBe('"Why Targeted Ads?"');
+  });
+
+  it('should render title in h1 tag', () => {
+    const compiled = fixture.debugElement.nativeElement;
+    expect(compiled.querySelector('h1').textContent).toContain('Why Targeted Ads?');
   });
 });
