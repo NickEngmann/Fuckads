@@ -40,3 +40,10 @@ testem.log
 # System Files
 .DS_Store
 Thumbs.db
+-e 
+# Build artifacts
+*.pyc
+__pycache__/
+*.o
+*.so
+.pytest_cache/
