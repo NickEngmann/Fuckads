@@ -8,6 +8,7 @@ import { ExplainationComponent } from './explaination/explaination.component';
 import { FormComponent } from './form/form.component';
 import { LandingComponent } from './landing/landing.component';
 import {CarouselService} from './carousel/carousel.service';
+import {AdBlockService} from './services/ad-block.service';
 
 @NgModule({
   declarations: [
